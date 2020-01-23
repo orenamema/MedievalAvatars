@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS Avatars_db;
+CREATE DATABASE Avatars_db;

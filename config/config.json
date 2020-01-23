@@ -2,10 +2,11 @@
   "development": {
     "username": "root",
     "password": "password",
-    "database": "database_development",
-    "host": "127.0.0.1",
+    "database": "Avatars_db",
+    "host": "localhost",
     "dialect": "mysql",
-    "operatorsAliases": false
+    "operatorsAliases": false,
+    "port": 3306
   },
   "test": {
     "username": "root",
