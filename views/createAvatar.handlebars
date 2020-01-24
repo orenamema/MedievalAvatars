@@ -1,0 +1,35 @@
+{{!-- character creation Notes: --}}
+{{!-- step 1: User selects Social Class --}}
+{{!-- step 2: User selects Career (from within social classes) --}}
+{{!-- step 3: User fills out character info: --}}
+    {{!-- Write Name (VARCHAR) --}}
+    {{!-- Write Age (INT) --}}
+    {{!-- Choose Personality Traits (selected from list) --}}
+    {{!-- Write Backstory (VARCHAR) --}}
+    {{!-- Write Character Details (VARCHAR)(optional) --}}
+
+    {{!-- Auto info (not edited) --}}
+    {{!-- Social Class --}}
+    {{!-- Career --}}
+    {{!-- Image --}}
+
+
+
+{{!-- ========================= Carousel bellow ================================================== --}}
+  {{!-- <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+  </div> --}}
+
+<div class="carousel">
+        {{#each socialClasses}}
+            {{#unless career}}
+
+                <a class="carousel-item" data-id="{{this.id}}" data-newImage="{{img}}"><img src="{{this.img}}"></a>
+
+            {{/unless}}
+        {{/each}}
+</div>
