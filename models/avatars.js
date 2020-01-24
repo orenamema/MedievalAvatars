@@ -6,24 +6,17 @@ module.exports = function(sequelize, DataTypes) {
             autoIncrement: true
         },
         name: DataTypes.STRING,
-        career: DataTypes.STRING,
-        socialClass: DataTypes.STRING,
-        personality: DataTypes.STRING,
-        history: DataTypes.TEXT,
         age: DataTypes.INTEGER,
-        details: DataTypes.TEXT,
-        img: DataTypes.STRING
+        personality: DataTypes.STRING,
+        backstory: DataTypes.TEXT,
+        details: DataTypes.TEXT
     });
 
 
     
     Avatars.associate = function(models) {
         Avatars.belongsToMany(models.Users, {through: 'UsersAvatars'});
-        // Avatars.hasMany(models.Users, {
-        //     foreignKey: {
-        //       allowNull: false
-        //     }
-        //   });
+        Avatars.belongsTo(models.AvatarClasses, {as: "AvatarClasses"});
       };
 
     return Avatars;
