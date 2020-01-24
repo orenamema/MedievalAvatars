@@ -2,26 +2,34 @@
 /* Depending on the chosen social class (button), the side-bar will change color from black to the same color as the button (in create avatar)*/
 
 #royal-button {
+    background-color: black;
     color: purple;
 }
 #authority-button {
+    background-color: black;
     color: #1d66ec;
 }
 #nobility-button {
+    background-color: black;
     color: white;
 }
 #military-button {
-    color: rgb(219, 23, 56);
+    background-color: black;
+    color: #db1738;
 }
 #clergy-button {
+    background-color: black;
     color: #ffe600;
 }
 #merchant-button {
+    background-color: black;
     color: #a76a31;
 }
 #peasantry-button {
+    background-color: black;
     color: #00a700;
 }
 #outsider-button {
+    background-color: black;
     color: #999999;
 }
