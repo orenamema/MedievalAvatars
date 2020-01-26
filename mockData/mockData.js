@@ -18,7 +18,7 @@ function createMock(){
                 "personality": "test_personality",
                 "backstory": "test_backstory",
                 "details": "test_details",
-                "AvatarClassesId": 10,
+                "AvatarClassesId": 1,
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
@@ -37,12 +37,13 @@ function createMock(){
 
         db.Users.create(mockData.Users).then(function(dbExample) {
                 console.log(`STORED Users!!`);
+                db.AvatarClasses.create(mockData.AvatarClasses).then(function(dbExample) {
+                        console.log(`STORED AvatarClasses!!`);
+                        db.Avatars.create(mockData.Avatars).then(function(dbExample) {
+                                console.log(`STORED Avatars!!`);
+                        });
+                });
         });
-        db.AvatarClasses.create(mockData.AvatarClasses).then(function(dbExample) {
-                console.log(`STORED AvatarClasses!!`);
-        });
-        db.Avatars.create(mockData.Avatars).then(function(dbExample) {
-                console.log(`STORED Avatars!!`);
-        });
+
 }
 module.exports = createMock;
