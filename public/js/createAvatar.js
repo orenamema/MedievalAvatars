@@ -1,6 +1,7 @@
 $(function(){
     $('.collapsible').collapsible();
     $('.carousel').carousel();
+    
     $(".button-row").on("click", function(){
         var btnvalue = $(this).attr("data-name-")
         $.get("/api/social-class/" + btnvalue, function (data){
