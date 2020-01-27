@@ -63,7 +63,6 @@
         }
 
         .container {
-            margin-top: 10%;
             text-align: center;
             width: 50%;
         }
@@ -92,20 +91,25 @@
     {{!-- Career --}}
     {{!-- Image --}} -->
 
-<div class="container">
-    <h3><strong>Select a Social Class</strong></h3>
-  <div class="buttons">
-    <div class="row">
-      <a class="button-row"><a class="waves-effect waves-light btn" id="royal-button">Royal</a></a>
-      <a class="button-row"><a class="waves-effect waves-light btn" id="authority-button">Authority</a></a>
-      <a class="button-row"><a class="waves-effect waves-light btn" id="nobility-button">Nobility</a></a>
-      <a class="button-row"><a class="waves-effect waves-light btn" id="military-button">Military</a></a>
-      <a class="button-row"><a class="waves-effect waves-light btn" id="clergy-button">Clergy</a></a>
-      <a class="button-row"><a class="waves-effect waves-light btn" id="merchant-button">Merchant</a></a>
-      <a class="button-row"><a class="waves-effect waves-light btn" id="peasantry-button">Peasantry</a></a>
-    </div>
-  </div>
 
+    <nav class="nav-extended">
+
+        <!-- Fixed Masonry Filters -->
+        <div class="categories-wrapper grey lighten-1">
+          <div class="categories-container">
+            <ul class="categories container">
+              <li><a href="#authority">Authority</a></li>
+              <li><a href="#clergy">Clergy</a></li>
+              <li><a href="#merchant">Merchant</a></li>
+              <li><a href="#military">Military</a></li>
+              <li><a href="#nobility">Nobility</a></li>
+              <li><a href="#peasantry">Peasantry</a></li>
+              <li><a href="#royal">Royal</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
 
 
 <!-- {{!-- ========================= Carousel bellow ================================================== --}} -->
