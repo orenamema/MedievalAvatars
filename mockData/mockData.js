@@ -8,6 +8,24 @@ function createMock(){
                 "updatedAt": Date()
                 },
         "AvatarClasses": [
+                {"career": "treasurer",
+                "socialClass": "authority",
+                "img": "/images/authorityClass/treasurer.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "executioner",
+                "socialClass": "authority",
+                "img": "/images/authorityClass/executioner.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "town-crier",
+                "socialClass": "authority",
+                "img": "/images/authorityClass/town-crier.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
                 {"career": "sheriff",
                 "socialClass": "authority",
                 "img": "/images/authorityClass/sheriff.png",
@@ -20,15 +38,57 @@ function createMock(){
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
+                {"career": "dean",
+                "socialClass": "clergy",
+                "img": "/images/clergyClass/dean.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "paladin",
+                "socialClass": "clergy",
+                "img": "/images/clergyClass/paladin.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "priest",
+                "socialClass": "clergy",
+                "img": "/images/clergyClass/priest.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
                 {"career": "artisan",
+                "socialClass": "merchant",
+                "img": "/images/merchantClass/artisan.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "apprentice",
+                "socialClass": "merchant",
+                "img": "/images/merchantClass/apprentice.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "merchant",
                 "socialClass": "merchant",
                 "img": "/images/merchantClass/merchant.png",
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
-                {"career": "calvarly",
+                {"career": "bannerman",
                 "socialClass": "military",
-                "img": "/images/militaryClass/cavalry.png",
+                "img": "/images/militaryClass/bannerman.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "soldier",
+                "socialClass": "military",
+                "img": "/images/militaryClass/soldier.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "constable",
+                "socialClass": "military",
+                "img": "/images/militaryClass/constable.png",
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
@@ -38,9 +98,39 @@ function createMock(){
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
+                {"career": "noblewoman",
+                "socialClass": "nobility",
+                "img": "/images/nobilityClass/noblewoman.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
                 {"career": "bard",
                 "socialClass": "peasantry",
                 "img": "/images/peasantryClass/bard.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "beggar",
+                "socialClass": "peasantry",
+                "img": "/images/peasantryClass/beggar.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "cook",
+                "socialClass": "peasantry",
+                "img": "/images/peasantryClass/cook.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "farmer",
+                "socialClass": "peasantry",
+                "img": "/images/peasantryClass/farmer.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "prince",
+                "socialClass": "royal",
+                "img": "/images/royalClass/prince.png",
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
@@ -50,6 +140,18 @@ function createMock(){
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
+                {"career": "queen",
+                "socialClass": "royal",
+                "img": "/images/royalClass/queen.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "princess",
+                "socialClass": "royal",
+                "img": "/images/royalClass/princess.png",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                }
         ],                
         "Avatars": [
                 {"name": "test_name",

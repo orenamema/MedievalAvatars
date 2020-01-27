@@ -1,19 +1,28 @@
 $(function(){
     $('.collapsible').collapsible();
     $('.carousel').carousel();
-    
-    $(".button-row").on("click", function(){
-        var btnvalue = $(this).attr("data-name-")
-        $.get("/api/social-class/" + btnvalue, function (data){
-            for (var i = 0; i < data.length; i++){
 
-                var carouselItem = $("<a>");
-                carouselItem.addClass("carousel-item");
-                carouselItem.attr("id", "item-" + i);
+    createCarousel();
+    function createCarousel(btnValue = "authority") {
+        $('.carousel').html('');
+        $("#carouselDiv").removeClass("initialized");
 
-                $("#carousel").append(carouselItem + "img src=" + data[i].img + "</a>");
-            }
+        $.get("/api/classes/" + btnValue, function(data){
+            data.forEach(element => {
+                var imgName = element.img;
+                var appendItem = `<a class="carousel-item"><img src="${imgName}"></a>`;
+                $(".carousel").append(appendItem);
+         
+            });
+            $('.carousel').carousel();
+            $("#carouselDiv").addClass("initialized");
+
         });
-    });
+    }
+
+    $(".createPageList li").on("click", function(){
+        var btnValue = $(this).attr("data-name");
+        createCarousel(btnValue);
+    })
 
 });
