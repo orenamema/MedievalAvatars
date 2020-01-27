@@ -1,0 +1,82 @@
+.authority:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgb(196, 44, 38), 0 6px 20px 0 rgb(196, 44, 38);
+}
+.clergy:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 yellow, 0 6px 20px 0 yellow;
+}
+.merchant:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 green, 0 6px 20px 0 green;
+}
+.military:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 orangered, 0 6px 20px 0 orangered;
+}
+.nobility:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgb(77, 77, 189), 0 6px 20px 0 rgba(97, 74, 228, 0.19);
+}
+.peasantry:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 black, 0 6px 20px 0 black;
+}
+.royal:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 blueviolet, 0 6px 20px 0 blueviolet;
+} 
+
+/* .authority img {
+    height: 250px;
+}
+.royal img {
+    height: 270px;
+}
+.peasantry img {
+    height: 280px;
+}
+.military img {
+    height: 300px;
+}
+.clergy img {
+    height: 320px;
+}
+.military img {
+    height: 260px;
+}
+
+/* .authority {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgb(196, 44, 38), 0 6px 20px 0 rgb(196, 44, 38);
+}
+.clergy {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 yellow, 0 6px 20px 0 yellow;
+}
+.merchant {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 green, 0 6px 20px 0 green;
+}
+.military {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 orangered, 0 6px 20px 0 orangered;
+}
+.nobility {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgb(77, 77, 189), 0 6px 20px 0 rgba(97, 74, 228, 0.19);
+}
+.peasantry {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 black, 0 6px 20px 0 black;
+}
+.royal {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 blueviolet, 0 6px 20px 0 blueviolet;
+} */
+
+
+/* .hoverable:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+} */
