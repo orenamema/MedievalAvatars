@@ -19,6 +19,4 @@ module.exports = app => {
             res.render("viewAvatar", {avatars: data});
         })
     });
-
-
 }
