@@ -21,20 +21,26 @@
 
     {{!-- carousel items generate here --}}
     {{!-- <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a> --}}
+      <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+  </div>
 
   </div>
 
 
-{{!-- <!-- <form> --> --}}
-
+<form class="create-form">
     <ul class="collapsible">
         <li>
             <div class="collapsible-header"><i class="fas fa-user-edit"></i>Name</div>
-            <div class="collapsible-body"><span><input type="text" name="name"></span></div>
+            <div class="collapsible-body"><span><input type="text" id="newName"name="name"></span></div>
         </li>
         <li>
             <div class="collapsible-header"><i class="fas fa-user-plus"></i>Age</div>
-            <div class="collapsible-body"><span><input type="text" name="age"></span></div>
+            <div class="collapsible-body"><span><input type="text" id="newAge" name="age"></span></div>
         </li>
         <li>
             <div class="collapsible-header"><i class="fas fa-user-check"></i>Personality</div>
@@ -45,167 +51,167 @@
                 <div class="p-container">
                     <div class="row">
                         <ul class="positive-traits">
-                            <li><input type="checkbox" class="filled-in" id="adventurous">
+                            <li><input type="checkbox" class="filled-in" value="adventurous" name="trait" id="adventurous">
                             <label for="adventurous">Adventurous</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="affable">
+                            <li><input type="checkbox" class="filled-in" value="affable" name="trait" id="affable">
                             <label for="affable">Affable</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="capable">
+                            <li><input type="checkbox" class="filled-in" value="capable" name="trait" id="capable">
                             <label for="capable">Capable</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="charming">
+                            <li><input type="checkbox" class="filled-in" value="charming" name="trait" id="charming">
                             <label for="charming">Charming</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="confident">
+                            <li><input type="checkbox" class="filled-in" value="confident" name="trait" id="confident">
                             <label for="confident">Confident</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="conscientious">
+                            <li><input type="checkbox" class="filled-in" value="conscientious" name="trait" id="conscientious">
                             <label for="conscientious">Conscientious</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="cultured">
+                            <li><input type="checkbox" class="filled-in" value="cultured" name="trait" id="cultured">
                             <label for="cultured">Cultured</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="dependable">
+                            <li><input type="checkbox" class="filled-in" value="dependable" name="trait" id="dependable">
                             <label for="dependable">Dependable</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="discreet">
+                            <li><input type="checkbox" class="filled-in" value="discreet" name="trait" id="discreet">
                             <label for="discreet">Discreet</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="dutiful">
+                            <li><input type="checkbox" class="filled-in" value="dutiful" name="trait" id="dutiful">
                             <label for="dutiful">Dutiful</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="encouraging">
+                            <li><input type="checkbox" class="filled-in" value="encouraging" name="trait" id="encouraging">
                             <label for="encouraging">Encouraging</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="fearless">
+                            <li><input type="checkbox" class="filled-in" value="fearless" name="trait" id="fearless">
                             <label for="fearless">Fearless</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="gregarious">
+                            <li><input type="checkbox" class="filled-in" value="gregarious" name="trait" id="gregarious">
                             <label for="gregarious">Gregarious</label></li>
                         </ul>
 
                         <ul class="positive-traits">
-                            <li><input type="checkbox" class="filled-in" id="helpful">
+                            <li><input type="checkbox" class="filled-in" value="helpful" name="trait" id="helpful">
                             <label for="helpful">Helpful</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="humble">
+                            <li><input type="checkbox" class="filled-in" value="humble" name="trait" id="humble">
                             <label for="humble">Humble</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="imaginative">
+                            <li><input type="checkbox" class="filled-in" value="imaginative" name="trait" id="imaginative">
                             <label for="imaginative">Imaginative</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="independent">
+                            <li><input type="checkbox" class="filled-in" value="independent" name="trait" id="independent">
                             <label for="independent">Independent</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="meticulous">
+                            <li><input type="checkbox" class="filled-in" value="meticulous" name="trait" id="meticulous">
                             <label for="meticulous">Meticulous</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="observant">
+                            <li><input type="checkbox" class="filled-in" value="observant" name="trait" id="observant">
                             <label for="observant">Observant</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="optimistic">
+                            <li><input type="checkbox" class="filled-in" value="optimistic" name="trait" id="optimistic">
                             <label for="optimistic">Optimistic</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="persistent">
+                            <li><input type="checkbox" class="filled-in" value="persistent" name="trait" id="persistent">
                             <label for="persistent">Persistent</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="precise">
+                            <li><input type="checkbox" class="filled-in" value="precise" name="trait" id="precise">
                             <label for="precise">Precise</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="reliable">
+                            <li><input type="checkbox" class="filled-in" value="reliable" name="trait" id="reliable">
                             <label for="reliable">Reliable</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="sociable">
+                            <li><input type="checkbox" class="filled-in" value="sociable" name="trait" id="sociable">
                             <label for="sociable">Sociable</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="trusting">
+                            <li><input type="checkbox" class="filled-in" value="trusting" name="trait" id="trusting">
                             <label for="trusting">Trusting</label></li>
 
-                            <li><input type="checkbox" class="filled-in" id="valiant">
+                            <li><input type="checkbox" class="filled-in" value="valiant" name="trait" id="valiant">
                             <label for="valiant">Valiant</label></li>
                         </ul>
 
                         {{!-- <!-- NEGATIVE TRAITS --> --}}
                         <ul class="negative-traits">
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="arrogant">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="arrogant" name="trait" id="arrogant">
                             <label for="arrogant">Arrogant</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="boorish">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="boorish" name="trait" id="boorish">
                             <label for="boorish">Boorish</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="bossy">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="bossy" name="trait" id="bossy">
                             <label for="bossy">Bossy</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="conceited">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="conceited" name="trait" id="conceited">
                             <label for="conceited">Conceited</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="cowardly">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="cowardly" name="trait" id="cowardly">
                             <label for="cowardly">Cowardly</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="dishonest">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="dishonest" name="trait" id="dishonest">
                             <label for="dishonest">Dishonest</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="finicky">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="finicky" name="trait" id="finicky">
                             <label for="finicky">Finicky</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="impulsive">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="impulsive" name="trait" id="impulsive">
                             <label for="impulsive">Impulsive</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="lazy">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="lazy" name="trait" id="lazy">
                             <label for="lazy">Lazy</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="maticious">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="maticious" name="trait" id="maticious">
                             <label for="maticious">Maticious</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="obnoxious">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="obnoxious" name="trait" id="obnoxious">
                             <label for="obnoxious">Obnoxious</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="picky">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="picky" name="trait" id="picky">
                             <label for="picky">Picky</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="pompous">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="pompous" name="trait" id="pompous">
                             <label for="pompous">Pompous</label></li>
                         </ul>
 
                         <ul class="negative-traits">
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="quarrelsome">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="quarrelsome" name="trait" id="quarrelsome">
                             <label for="quarrelsome">Quarrelsome</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="rude">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="rude" name="trait" id="rude">
                             <label for="rude">Rude</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="sarcastic">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="sarcastic" name="trait" id="sarcastic">
                             <label for="sarcastic">Sarcastic</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="self-centered">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="self-centered" name="trait" id="self-centered">
                             <label for="self-centered">Self-centered</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="slovenly">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="slovenly" name="trait" id="slovenly">
                             <label for="slovenly">Slovenly</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="sneaky">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="sneaky" name="trait" id="sneaky">
                             <label for="sneaky">Sneaky</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="stingy">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="stingy" name="trait" id="stingy">
                             <label for="stingy">Stingy</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="sullen">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="sullen" name="trait" id="sullen">
                             <label for="sullen">Sullen</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="surly">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="surly" name="trait" id="surly">
                             <label for="surly">Surly</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="thoughtless">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="thoughtless" name="trait" id="thoughtless">
                             <label for="thoughtless">Thoughtless</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="unfriendly">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="unfriendly" name="trait" id="unfriendly">
                             <label for="unfriendly">Unfriendly</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="unruly">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="unruly" name="trait" id="unruly">
                             <label for="unruly">Unruly</label></li>
 
-                            <li><input type="checkbox" class="filled-in checkbox-red" id="vulgar">
+                            <li><input type="checkbox" class="filled-in checkbox-red" value="vulgar" name="trait" id="vulgar">
                             <label for="vulgar">Vulgar</label></li>
                         </ul>
                     </div>
@@ -215,19 +221,14 @@
         </li>
         <li>
             <div class="collapsible-header"><i class="fas fa-user-edit"></i>Backstory</div>
-            <div class="collapsible-body"><span><input type="text" name="backstory"></span></div>
+            <div class="collapsible-body"><span><input type="text" id="newBackstory" name="backstory"></span></div>
         </li>
         <li>
             <div class="collapsible-header"><i class="fas fa-user-edit"></i>Character Details (Optional)</p></div>
-            <div class="collapsible-body"><span><input type="text" name="charDetails"></span></div>
+            <div class="collapsible-body"><span><input type="text" id="newDetails" name="charDetails"></span></div>
         </li>
         <button type="submit" class="submit">Create</button>
     </ul>
 
-{{!-- <!-- </form> --> --}}
+</form>
 
-<script>
-  $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
-</script>

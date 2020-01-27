@@ -19,4 +19,9 @@ module.exports = app => {
             res.render("viewAvatar", {avatars: data});
         })
     });
+
+    app.get("/create",(req,res) => {
+        res.render("createAvatar");
+    });
+
 }
