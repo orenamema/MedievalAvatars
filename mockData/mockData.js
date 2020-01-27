@@ -24,7 +24,7 @@ function createMock(){
                 },
         // "Avatars": {"userName": "test_user",
         //         "password": "test_password",
-        //         "createdAt": Date(), 
+         //         "createdAt": Date(), 
         //         "updatedAt": Date()
         //         },
         // "AvatarClasses": {"userName": "test_user",
