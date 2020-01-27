@@ -1,0 +1,59 @@
+<nav class="nav-extended">
+
+  <!-- Fixed Masonry Filters -->
+  <div class="categories-wrapper grey lighten-1">
+    <div class="categories-container">
+      <ul class="categories container">
+        <li class="active"><a href="#all">All</a></li>
+        <li><a href="#authority">Authority</a></li>
+        <li><a href="#clergy">Clergy</a></li>
+        <li><a href="#merchant">Merchant</a></li>
+        <li><a href="#military">Military</a></li>
+        <li><a href="#nobility">Nobility</a></li>
+        <li><a href="#peasantry">Peasantry</a></li>
+        <li><a href="#royal">Royal</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Gallery -->
+
+<div id="portfolio" class="section gray">
+  <div class="container">
+    <div class="gallery row" id="galleryDiv">
+  {{#each avatars}}
+
+      <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter {{AvatarClasses.socialClass}} hoverable">
+        <div class="gallery-curve-wrapper">
+          <a class="gallery-cover gray">
+      
+            <img class="responsive-img imgDiv" src="{{AvatarClasses.img}}" alt="placeholder">
+          </a>
+          <div class="gallery-header">
+            <span>{{AvatarClasses.career}}</span>
+          </div>
+          <div class="gallery-body">
+            <div class="title-wrapper">
+              <h3>{{AvatarClasses.career}}</h3>
+            </div>
+            <p class="description">
+             <p> Name: {{name}}</p>
+             <p> Age: {{age}}</p>
+             <p> Backstory: {{backstory}}</p>
+             <p> Personality: {{personality}}</p>
+             <p> Details: {{details}}</p>
+            </p>
+          </div>
+          <div class="gallery-action">
+            <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+          </div>
+        </div>
+      </div>
+  {{/each}}
+
+    </div>
+  </div>
+</div><!-- /.container -->

@@ -11,8 +11,8 @@ app.set("view engine", "handlebars");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// var routes = require("./controllers/burgers_controller.js");
 app.use(express.static("public"));
+var syncOptions = { force: true };
 
 require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
@@ -24,7 +24,7 @@ var sample_user = {"userName": "test_user",
                    "updatedAt": Date()
                    };
 
-db.sequelize.sync().then(function() {
+db.sequelize.sync(syncOptions).then(function() {
     console.log(Object.keys(db));
     createMock();
     app.listen(PORT, function() {
