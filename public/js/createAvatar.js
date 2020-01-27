@@ -18,7 +18,7 @@ $(function(){
         $.get("/api/classes/" + btnValue, function(data){
             data.forEach(element => {
                 var imgName = element.img;
-                var appendItem = `<a class="carousel-item" data-id="${element.id}"><img src="${imgName}"></a>`;
+                var appendItem = `<a class="carousel-item" data-id="${element.id}"><img src="${imgName}"><span class="imgTitle">${element.career}</span></a>`;
                 $(".carousel").append(appendItem);
          
             });

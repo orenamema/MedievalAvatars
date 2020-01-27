@@ -1,5 +1,9 @@
 .carousel .carousel-item {
     visibility: visible;
-    height: 400px;
-    width: 400px;;
+    height: 350px;
+    width: 350px;;
+}
+/*style for the carousel name tags*/
+.imgTitle {
+    color: black;
 }
