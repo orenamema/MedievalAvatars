@@ -123,6 +123,7 @@
 
         origin.off('click.galleryExpand').on('click.galleryExpand', function(e) {
           // If already modal, do nothing
+          var className = $(this).attr("data-class");
           if (!originClickable) {
             return;
           }
@@ -335,7 +336,7 @@
             originalNavColor = $('nav').css('background-color');
             $('nav').addClass('fadeOut');
           }
-          navbar.css({'background-color': originalNavColor});
+          navbar.css({'background-color': "black"});
           container.append(backBtn);
           navWrapper.append(container);
           navbar.append(navWrapper);
@@ -388,9 +389,21 @@
           // If color thief fails to set primaryColor
           primaryColor = primaryColor || options.defaultColor;
 
+
+
+          //className
+          var classColor = {
+            "authority": "red",
+            "clergy": "yellow",
+            "merchant": "green",
+            "military": "tan",
+            "nobility": "aqua",
+            "peasantry": "blue",
+            "royal": "blueviolet"
+          }
           // Style overlay and gradient
           overlay.css({
-            backgroundColor: primaryColor
+            backgroundColor: classColor[className]
           });
           if (fillScreen && gradient.length) {
             gradient.css({
