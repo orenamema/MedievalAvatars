@@ -17,13 +17,6 @@ var syncOptions = { force: true };
 require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
-// sample data
-var sample_user = {"userName": "test_user",
-                   "password": "test_password",
-                   "createdAt": Date(), 
-                   "updatedAt": Date()
-                   };
-
 db.sequelize.sync(syncOptions).then(function() {
     console.log(Object.keys(db));
     createMock();

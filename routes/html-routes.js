@@ -1,7 +1,7 @@
 const db = require("../models");
 
 module.exports = app => {
-    app.get("/",(req,res) => {
+    app.get("/1",(req,res) => {
         res.render("loginPage");
     });
 
