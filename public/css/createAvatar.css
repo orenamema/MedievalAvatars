@@ -12,15 +12,14 @@ body {
     }
 
         #carouselDiv{
-            margin-bottom: 75px;
+            margin-top: -50px;
+            height: 550px;
         }
 
         .imgTitle {
             color: black;
             font-size: 42px;
             text-align: center;
-
-            padding-bottom: 300px;
         }
 
     .container {
@@ -47,8 +46,6 @@ body {
         text-align: center;
         font-weight: bold;
         font-size: 25px;
-
-        margin-bottom: 10px;
     }
 
         .positive-traits {
@@ -67,30 +64,24 @@ body {
             }
 
     #royal-tab {
-        /* color: #ff00ff; */
         color: white;
     }
     #authority-tab {
-        /* color: #42a4ff; */
         color: white;
     }
     #nobility-tab {
         color: white;
     }
     #military-tab {
-        /* color: #f50057; */
         color: white;
     }
     #clergy-tab {
-        /* color: #ffe600; */
         color: white;
     }
     #merchant-tab {
-        /* color: #ca8e56; */
         color: white;
     }
     #peasantry-tab {
-        /* color: #00ff00; */
         color: white;
     }
 

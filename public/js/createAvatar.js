@@ -1,4 +1,8 @@
 $(function(){
+
+
+
+    // ========================= Carousel ==================================================
     var activeImage;
 
     $('.collapsible').collapsible();
@@ -35,6 +39,8 @@ $(function(){
 
 
 
+
+    // ========================= Create Avatar ==================================================
     $(".createPageList li").on("click", function(){
         var btnValue = $(this).attr("data-name");
         createCarousel(btnValue);
@@ -42,7 +48,6 @@ $(function(){
 
 
     var Avatar = {
-    
         create: function(data, cb) {
             Avatar.create("Avatars", data, function(res){
                 cb(res);
@@ -63,9 +68,9 @@ $(function(){
             var ele = result[i].length;
             string += ele;
         }
-
         console.log(string);
     });
+
 
 
     $(".create-form").on("submit", function(event){
@@ -101,7 +106,7 @@ $(function(){
     });
 
 
-    //Button color effects
+    // ========================= Button color effects ==================================================
     $("#royal-tab").mouseover(function(){
         $(this).css('color', '#ff00ff');
     }).mouseout(function(){
@@ -137,4 +142,11 @@ $(function(){
     }).mouseout(function(){
         $(this).css('color', 'white');
     });
+
+
+    // ========================= Slidenav ==================================================
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+
 });
