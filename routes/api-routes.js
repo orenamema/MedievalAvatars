@@ -10,7 +10,7 @@ module.exports = app => {
             })
         })
         req.body
-    })
+    });
     app.get("/api/classes/:name", function(req, res) {
         db.AvatarClasses.findAll(
             {
@@ -20,6 +20,17 @@ module.exports = app => {
         }).then(function(data){
             res.json(data);
         })
-    })
+    });
+    app.post("/api/access/", function(req,res){
+        db.Users.findAll({
+            where: {
+                userName: req.data.userName,
+                password: req.data.password
+            }
+        }).then(function(login) {
+          res.json(login);
+        });
+    });
+
 }
 
