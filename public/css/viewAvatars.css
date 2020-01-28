@@ -1,3 +1,8 @@
+.nav-extended {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
 .authority:hover {
     transition: box-shadow .25s;
     box-shadow: 0 8px 17px 0 red, 0 6px 20px 0 red;
@@ -26,6 +31,35 @@
     transition: box-shadow .25s;
     box-shadow: 0 8px 17px 0 purple, 0 6px 20px 0 purple;
 } 
+
+#royal-view {
+    color: white;
+    padding: 17px;
+}
+#authority-view {
+    color: white;
+    padding: 17px;
+}
+#nobility-view {
+    color: white;
+    padding: 17px;
+}
+#military-view {
+    color: white;
+    padding: 17px;
+}
+#clergy-view {
+    color: white;
+    padding: 17px;
+}
+#merchant-view {
+    color: white;
+    padding: 17px;
+}
+#peasantry-view {
+    color: white;
+    padding: 17px;
+}
 
 /* .authority img {
     height: 250px;

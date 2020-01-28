@@ -7,7 +7,7 @@ module.exports = app => {
     // In the interim, index.html is the quick fix 
     // to access localhost:8080
     // We will debug loginPage.handlebars on localhost:8080/1
-    app.get("/1",(req,res) => {
+    app.get("/",(req,res) => {
         res.render("loginPage");
     });
 

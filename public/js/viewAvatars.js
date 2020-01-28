@@ -1,9 +1,41 @@
 $(function(){
-    // $('.fixed-action-btn').floatingActionButton();
-        var imgHeights = [250, 300, 280, 320, 290, 260, 300, 280, 240, 260];
 
-        $("#menu").on("click", function(){
-            instances.open();
-        });
+    $("#royal-view").mouseover(function(){
+        $(this).css('color', '#ff00ff');
+    }).mouseout(function(){
+        $(this).css('color', 'white');
+    });
+
+    $("#authority-view").mouseover(function(){
+        $(this).css('color', '#42a4ff');
+    }).mouseout(function(){
+        $(this).css('color', 'white');
+    });
+
+    $("#military-view").mouseover(function(){
+        $(this).css('color', '#f50057');
+    }).mouseout(function(){
+        $(this).css('color', 'white');
+    });
+
+    $("#clergy-view").mouseover(function(){
+        $(this).css('color', '#ffe600');
+    }).mouseout(function(){
+        $(this).css('color', 'white');
+    });
+
+    $("#merchant-view").mouseover(function(){
+        $(this).css('color', '#ca8e56');
+    }).mouseout(function(){
+        $(this).css('color', 'white');
+    });
+
+    $("#peasantry-view").mouseover(function(){
+        $(this).css('color', '#00ff00');
+    }).mouseout(function(){
+        $(this).css('color', 'white');
+    });
+
+        
 })
 
