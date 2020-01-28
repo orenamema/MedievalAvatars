@@ -1,7 +1,11 @@
+// We get all the necessary ids into variables
 var $userName = $("#userName");
 var $password = $("#password");
 var $submitBtn = $("#submit");
 
+// We create an API Object that will communicate
+// with the server to send the username and password
+// in a post request
 var API = {
   login: function(data) {
     return $.ajax({
@@ -15,32 +19,32 @@ var API = {
   },
 };
 
+// We create a function that will run when the login
+// button is hit
 var handleFormSubmit = function(event) {
   event.preventDefault();
 
-  console.log("In Here");
+  // We get rid of all spaces before and after 
+  // username and password with trim()
   var login = {
     userName: $userName.val().trim(),
     password: $password.val().trim()
   };
 
-  if ($userName=="" || $password=="") {
-    alert("Enter username or password!");
-    return;
-  }
-
-  console.log(login);
-
+  // We send the username and password to the server
+  // to validate the data, we go to the create page 
+  // when we are successful or go get an alert if the
+  // credentials do not exist
   API.login(login).then(function(response) {
     console.log(response);
     if (response == "success"){
         window.location.href = "/create";
     }
     else {
-        alert("Though shall not pass!!!");    
+        alert("Thou shalt not pass!!!");    
     }
   });
-  
+
 };
 
 
