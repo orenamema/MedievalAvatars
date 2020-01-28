@@ -1,6 +1,12 @@
 const db = require("../models");
 
 module.exports = app => {
+    // This should be "/" but is "/1" as too many 
+    // .css and .js files imported in main.handlebars
+    // are breaking formating for loginPage.handlebars
+    // In the interim, index.html is the quick fix 
+    // to access localhost:8080
+    // We will debug loginPage.handlebars on localhost:8080/1
     app.get("/1",(req,res) => {
         res.render("loginPage");
     });
