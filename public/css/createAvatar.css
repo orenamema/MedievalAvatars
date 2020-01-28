@@ -14,7 +14,10 @@ body {
         width: 350px;;
         text-align: center;
         border: 5px solid black;
+
+        transition: ease-in-out 0s;
     }
+    
         #carouselDiv{
             margin-top: -50px;
             height: 550px;
