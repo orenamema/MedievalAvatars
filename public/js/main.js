@@ -1,3 +1,49 @@
+var $userName = $("#userName");
+var $password = $("#password");
+var $submitBtn = $("#submit");
+
+var API = {
+  login: function(data) {
+    return $.ajax({
+      headers: {
+        "Content-Type": "application/json"
+      },
+      type: "POST",
+      url: "api/login",
+      data: JSON.stringify(data)
+    });
+  },
+};
+
+var handleFormSubmit = function(event) {
+  event.preventDefault();
+
+  var login = {
+    userName: $userName.val().trim(),
+    password: $password.val().trim()
+  };
+
+  if ($userName=="" || $password=="") {
+    alert("Enter username or password!");
+    return;
+  }
+
+  API.login(login).then(function(response) {
+    if (response=='success'){
+        window.location.href = "/create";
+    }
+    else {
+        alert("Though shall not pass!!!");    
+    }
+  });
+
+  // $exampleText.val("");
+  // $exampleDescription.val("");
+};
+
+
+$submitBtn.on("click", handleFormSubmit);
+
 
 (function ($) {
     "use strict";

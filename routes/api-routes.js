@@ -21,14 +21,16 @@ module.exports = app => {
             res.json(data);
         })
     });
-    app.post("/api/access/", function(req,res){
+    app.post("/api/login/", function(req,res){
         db.Users.findAll({
             where: {
                 userName: req.data.userName,
                 password: req.data.password
             }
         }).then(function(login) {
-          res.json(login);
+            console.log("THE LOGIN!!")
+            console.log(login);
+            res.json(login);
         });
     });
 
