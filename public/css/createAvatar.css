@@ -4,9 +4,13 @@ body {
 }
     .carousel .carousel-item {
         visibility: visible;
-        height: 400px;
-        width: 400px;;
+        height: 350px;
+        width: 350px;;
     }
+
+        .imgTitle {
+            color: black;
+        }
 
     .container {
         text-align: center;
@@ -73,3 +77,4 @@ body {
         /* color: #00ff00; */
         color: white;
     }
+

@@ -1,6 +1,6 @@
 .authority:hover {
     transition: box-shadow .25s;
-    box-shadow: 0 8px 17px 0 rgb(196, 44, 38), 0 6px 20px 0 rgb(196, 44, 38);
+    box-shadow: 0 8px 17px 0 red, 0 6px 20px 0 red;
 }
 .clergy:hover {
     transition: box-shadow .25s;
@@ -12,15 +12,15 @@
 }
 .military:hover {
     transition: box-shadow .25s;
-    box-shadow: 0 8px 17px 0 orangered, 0 6px 20px 0 orangered;
+    box-shadow: 0 8px 17px 0 tan, 0 6px 20px 0 tan;
 }
 .nobility:hover {
     transition: box-shadow .25s;
-    box-shadow: 0 8px 17px 0 rgb(77, 77, 189), 0 6px 20px 0 rgba(97, 74, 228, 0.19);
+    box-shadow: 0 8px 17px 0 aqua, 0 6px 20px 0 aqua;
 }
 .peasantry:hover {
     transition: box-shadow .25s;
-    box-shadow: 0 8px 17px 0 black, 0 6px 20px 0 black;
+    box-shadow: 0 8px 17px 0 blue, 0 6px 20px 0 blue;
 }
 .royal:hover {
     transition: box-shadow .25s;

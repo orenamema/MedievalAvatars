@@ -168,7 +168,7 @@ function createMock(){
                 "personality": "test_personality2",
                 "backstory": "test_backstory2",
                 "details": "test_details2",
-                "AvatarClassesId": 2,
+                "AvatarClassesId": 5,
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
@@ -177,7 +177,7 @@ function createMock(){
                 "personality": "test_personality3",
                 "backstory": "test_backstory3",
                 "details": "test_details3",
-                "AvatarClassesId": 3,
+                "AvatarClassesId": 9,
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
@@ -186,7 +186,7 @@ function createMock(){
                 "personality": "test_personality4",
                 "backstory": "test_backstory4",
                 "details": "test_details4",
-                "AvatarClassesId": 4,
+                "AvatarClassesId": 12,
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
@@ -195,7 +195,7 @@ function createMock(){
                 "personality": "test_personality5",
                 "backstory": "test_backstory5",
                 "details": "test_details5",
-                "AvatarClassesId": 5,
+                "AvatarClassesId": 15,
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
@@ -204,7 +204,7 @@ function createMock(){
                 "personality": "test_personality6",
                 "backstory": "test_backstory6",
                 "details": "test_details6",
-                "AvatarClassesId":6,
+                "AvatarClassesId": 18,
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
@@ -213,7 +213,7 @@ function createMock(){
                 "personality": "test_personality7",
                 "backstory": "test_backstory7",
                 "details": "test_details7",
-                "AvatarClassesId":7,
+                "AvatarClassesId": 23,
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 }
