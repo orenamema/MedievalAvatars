@@ -24,13 +24,17 @@ module.exports = app => {
     app.post("/api/login/", function(req,res){
         db.Users.findAll({
             where: {
-                userName: req.data.userName,
-                password: req.data.password
+                userName: req.body.userName,
+                password: req.body.password
             }
         }).then(function(login) {
-            console.log("THE LOGIN!!")
-            console.log(login);
-            res.json(login);
+            if (login.length > 0) {
+                var response = "success";
+            }
+            else{
+                var response = "fail";
+            }
+            res.send(response);
         });
     });
 

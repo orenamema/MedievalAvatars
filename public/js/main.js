@@ -18,6 +18,7 @@ var API = {
 var handleFormSubmit = function(event) {
   event.preventDefault();
 
+  console.log("In Here");
   var login = {
     userName: $userName.val().trim(),
     password: $password.val().trim()
@@ -28,17 +29,18 @@ var handleFormSubmit = function(event) {
     return;
   }
 
+  console.log(login);
+
   API.login(login).then(function(response) {
-    if (response=='success'){
+    console.log(response);
+    if (response == "success"){
         window.location.href = "/create";
     }
     else {
         alert("Though shall not pass!!!");    
     }
   });
-
-  // $exampleText.val("");
-  // $exampleDescription.val("");
+  
 };
 
 
