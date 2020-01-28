@@ -1,9 +1,13 @@
 const db = require("../models");
 
 module.exports = app => {
-    app.post("/api/create", function(req,res){
-        db.Avatars.create(req.body, function(dtat){
-            res.json(dtat)
+    app.post("/api/create/:userId", function(req,res){
+        db.Avatars.create(req.body, function(data){
+            res.json(data)
+            db.UsersAvatars.create({
+                UserId: req.params.UserId,
+                AvatarId: data.id
+            })
         })
         req.body
     })

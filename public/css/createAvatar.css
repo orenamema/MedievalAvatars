@@ -1,5 +1,75 @@
-.carousel .carousel-item {
-    visibility: visible;
-    height: 400px;
-    width: 400px;;
+body {
+    margin: 0;
+    padding: 0;
 }
+    .carousel .carousel-item {
+        visibility: visible;
+        height: 400px;
+        width: 400px;;
+    }
+
+    .container {
+        text-align: center;
+        width: 50%;
+    }
+
+        .collapsible-header {
+            height: 55px;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        #submit-button {
+            margin: 10px;
+            float: right;
+            font-weight: bold;
+        }
+
+    .nav-extended {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+        .positive-traits {
+            float: left;
+            margin-left: 2.5vw;
+            text-align: left;
+        }
+        .negative-traits {
+            float: left;
+            margin-left: 2.5vw;
+            text-align: left;
+        }
+            .checkbox-red[type="checkbox"].filled-in:checked + label:after{
+                border: 2px solid #f50057;
+                background-color: #f50057;
+            }
+
+    #royal-tab {
+        /* color: #ff00ff; */
+        color: white;
+    }
+    #authority-tab {
+        /* color: #42a4ff; */
+        color: white;
+    }
+    #nobility-tab {
+        color: white;
+    }
+    #military-tab {
+        /* color: #f50057; */
+        color: white;
+    }
+    #clergy-tab {
+        /* color: #ffe600; */
+        color: white;
+    }
+    #merchant-tab {
+        /* color: #ca8e56; */
+        color: white;
+    }
+    #peasantry-tab {
+        /* color: #00ff00; */
+        color: white;
+    }
