@@ -2,14 +2,25 @@ body {
     margin: 0;
     padding: 0;
 }
+
     .carousel .carousel-item {
         visibility: visible;
         height: 350px;
         width: 350px;;
+        text-align: center;
+        border: 5px solid black;
     }
+
+        #carouselDiv{
+            margin-bottom: 75px;
+        }
 
         .imgTitle {
             color: black;
+            font-size: 42px;
+            text-align: center;
+
+            padding-bottom: 300px;
         }
 
     .container {
@@ -23,9 +34,12 @@ body {
             text-align: left;
         }
 
+
         #submit-button {
+            height: 42px;
             margin: 10px;
             float: right;
+            font-size: 25px;
             font-weight: bold;
         }
 
@@ -33,6 +47,8 @@ body {
         text-align: center;
         font-weight: bold;
         font-size: 25px;
+
+        margin-bottom: 10px;
     }
 
         .positive-traits {
