@@ -186,7 +186,7 @@ iframe {
   overflow: hidden;
 
   background: transparent;
-  margin-left: -70%;
+  margin-left: -50%; /*/position of login box*/
   margin-top: -30%;
 }
 

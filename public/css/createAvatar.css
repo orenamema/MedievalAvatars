@@ -1,9 +1,97 @@
-.carousel .carousel-item {
-    visibility: visible;
-    height: 350px;
-    width: 350px;;
+@font-face {
+    font-family: Enchanted Land;
+    src: url("/fonts/enchanted/Enchanted Land.otf");
+  }
+
+body {
+    margin: 0;
+    padding: 0;
 }
-/*style for the carousel name tags*/
-.imgTitle {
-    color: black;
-}
+
+    .carousel .carousel-item {
+        visibility: visible;
+        height: 350px;
+        width: 350px;;
+        text-align: center;
+        border: 5px solid black;
+    }
+        #carouselDiv{
+            margin-top: -50px;
+            height: 550px;
+        }
+        .imgTitle {
+            color: black;
+            font-size: 42px;
+            text-align: center;
+
+            font-family: Enchanted Land;
+        }
+
+
+    .container {
+        text-align: center;
+        width: 50%;
+    }
+        .collapsible-header {
+            height: 55px;
+            font-size: 25px;
+            text-align: left;
+        }
+        #submit-button {
+            height: 42px;
+            margin: 10px;
+            float: right;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+
+    .nav-extended {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+    }
+        .positive-traits {
+            float: left;
+            margin-left: 2.5vw;
+            text-align: left;
+        }
+        .negative-traits {
+            float: left;
+            margin-left: 2.5vw;
+            text-align: left;
+        }
+            .checkbox-red[type="checkbox"].filled-in:checked + label:after{
+                border: 2px solid #f50057;
+                background-color: #f50057;
+            }
+
+    #royal-tab {
+        color: white;
+        padding: 17px;
+    }
+    #authority-tab {
+        color: white;
+        padding: 17px;
+    }
+    #nobility-tab {
+        color: white;
+        padding: 17px;
+    }
+    #military-tab {
+        color: white;
+        padding: 17px;
+    }
+    #clergy-tab {
+        color: white;
+        padding: 17px;
+    }
+    #merchant-tab {
+        color: white;
+        padding: 17px;
+    }
+    #peasantry-tab {
+        color: white;
+        padding: 17px;
+    }
+

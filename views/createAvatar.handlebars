@@ -1,33 +1,38 @@
 <nav class="nav-extended">
-  <div class="categories-wrapper grey lighten-1">
+  <div class="categories-wrapper black">
     <div class="categories-container">
       <ul class="categories container createPageList">
-        <li data-name="authority"><a href="#authority">Authority</a></li>
-        <li data-name="clergy"><a href="#clergy">Clergy</a></li>
-        <li data-name="merchant"><a href="#merchant">Merchant</a></li>
-        <li data-name="military"><a href="#military">Military</a></li>
-        <li data-name="nobility"><a href="#nobility">Nobility</a></li>
-        <li data-name="peasantry"><a href="#peasantry">Peasantry</a></li>
-        <li data-name="royal"><a href="#royal">Royal</a></li>
+        <li data-name="royal"><a class="waves-effect waves-purple accent-3" id="royal-tab" href="#royal">Royal</a></li>
+        <li data-name="authority"><a class="waves-effect waves-teal" id="authority-tab" href="#authority">Authority</a></li>
+        <li data-name="military"><a class="waves-effect waves-red" id="military-tab" href="#military">Military</a></li>
+        <li data-name="nobility"><a class="waves-effect waves-light" id="nobility-tab" href="#nobility">Nobility</a></li>
+        <li data-name="clergy"><a class="waves-effect waves-yellow" id="clergy-tab" href="#clergy">Clergy</a></li>
+        <li data-name="merchant"><a class="waves-effect waves-orange" id="merchant-tab" href="#merchant">Merchant</a></li>
+        <li data-name="peasantry"><a class="waves-effect waves-green" id="peasantry-tab" href="#peasantry">Peasantry</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container">
+
+{{!-- ========================= Slidenav ================================================== --}}
+
+
 
 
     {{!-- ========================= Carousel bellow ================================================== --}}
 
-        {{!-- carousel items generate here --}}
-        {{!-- <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a> --}}
+    {{!-- carousel items generate here --}}
+    {{!-- <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a> --}}
+    <div class="carousel-container">
+        <div id="carouselDiv" class="carousel">
+            <a class="carousel-item" href="#one!" ><img src=""></a>
 
-    <div id="carouselDiv" class="carousel">
-        <a class="carousel-item" href="#one!" ><img src=""></a>
-
+        </div>
     </div>
 
 
+<div class="container">
     <form class="create-form">
         <ul class="collapsible">
             <li>
@@ -220,13 +225,14 @@
                 <div class="collapsible-body"><span><input type="text" id="newBackstory" name="backstory"></span></div>
             </li>
             <li>
-                <div class="collapsible-header"><i class="fas fa-user-edit"></i>Character Details (Optional)</p></div>
+                <div class="collapsible-header"><i class="fas fa-user-edit"></i>Details (Optional)</p></div>
                 <div class="collapsible-body"><span><input type="text" id="newDetails" name="charDetails"></span></div>
             </li>
-            <button type="submit" class="submit">Create</button>
+            <button type="submit" id="submit-button" class="btn black white-text waves-effect waves-light submit">Create</button>
         </ul>
 
     </form>
 
 </div>
 
+<script src="/js/createAvatar.js"></script>

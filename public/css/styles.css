@@ -2,18 +2,16 @@
 body {
     margin: 0;
     padding: 0;
-}
-.buttons {
-    font-size: 25px;
+    background-color: royalblue;
 }
 .positive-traits {
     float: left;
-    margin-left: 2vw;
+    margin-left: 2.5vw;
     text-align: left;
 }
 .negative-traits {
     float: left;
-    margin-left: 2vw;
+    margin-left: 2.5vw;
     text-align: left;
 }
 .checkbox-red[type="checkbox"].filled-in:checked + label:after{
@@ -25,31 +23,31 @@ body {
     font-size: 25px;
     text-align: left;
 }
-#royal-button {
+#royal-tab {
     background-color: black;
     color: #ff00ff;
 }
-#authority-button {
+#authority-tab {
     background-color: black;
     color: #42a4ff;
 }
-#nobility-button {
+#nobility-tab {
     background-color: black;
     color: white;
 }
-#military-button {
+#military-tab {
     background-color: black;
     color: #f50057;
 }
-#clergy-button {
+#clergy-tab {
     background-color: black;
     color: #ffe600;
 }
-#merchant-button {
+#merchant-tab {
     background-color: black;
     color: #ca8e56;
 }
-#peasantry-button {
+#peasantry-tab {
     background-color: black;
     color: #00ff00;
 }
