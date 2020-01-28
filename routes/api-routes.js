@@ -21,14 +21,26 @@ module.exports = app => {
             res.json(data);
         })
     });
-    app.post("/api/access/", function(req,res){
+
+    // login route
+    app.post("/api/login/", function(req,res){
+        // We query the database to find the username
+        // and password we received in the request
         db.Users.findAll({
             where: {
-                userName: req.data.userName,
-                password: req.data.password
+                userName: req.body.userName,
+                password: req.body.password
             }
         }).then(function(login) {
-          res.json(login);
+            // should we find an existing record, we send 
+            // back a response "success" or "fail" otherwise
+            if (login.length > 0) {
+                var response = "success";
+            }
+            else{
+                var response = "fail";
+            }
+            res.send(response);
         });
     });
 
