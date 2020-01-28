@@ -16,6 +16,7 @@ $(function(){
     })
 
     function createCarousel(btnValue = "authority") {
+        console.log("Sasa");
         $('.carousel').html('');
         $("#carouselDiv").removeClass("initialized");
 

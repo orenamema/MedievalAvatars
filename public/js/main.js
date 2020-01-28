@@ -1,7 +1,8 @@
 // We get all the necessary ids into variables
 var $userName = $("#userName");
 var $password = $("#password");
-var $submitBtn = $("#submit");
+var $submitBtn = $("#login");
+var $createBtn = $("#create");
 
 // We create an API Object that will communicate
 // with the server to send the username and password
@@ -17,6 +18,17 @@ var API = {
       data: JSON.stringify(data)
     });
   },
+  create: function(data) {
+    return $.ajax({
+      headers: {
+        "Content-Type": "application/json"
+      },
+      type: "POST",
+      url: "api/createAccount",
+      data: JSON.stringify(data)
+    });
+  },
+
 };
 
 // We create a function that will run when the login
@@ -47,8 +59,36 @@ var handleFormSubmit = function(event) {
 
 };
 
+// We create a function that will run when the login
+// button is hit
+var handleFormCreate = function(event) {
+    event.preventDefault();
+  
+    // We get rid of all spaces before and after 
+    // username and password with trim()
+    var login = {
+      userName: $userName.val().trim(),
+      password: $password.val().trim()
+    };
+  
+    // We send the username and password to the server
+    // to validate the data, we go to the create page 
+    // when we are successful or go get an alert if the
+    // credentials do not exist
+    API.create(login).then(function(response) {
+      console.log(response);
+      if (response == "success"){
+          window.location.href = "/create";
+      }
+      else {
+          alert("Error Password not created");    
+      }
+    });
+  
+  };
 
 $submitBtn.on("click", handleFormSubmit);
+$createBtn.on("click", handleFormCreate);
 
 
 (function ($) {

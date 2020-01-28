@@ -7,7 +7,8 @@ module.exports = function(sequelize, DataTypes) {
         },
         career: DataTypes.STRING,
         socialClass: DataTypes.STRING,
-        img: DataTypes.STRING
+        img: DataTypes.STRING,
+        careerDescriptions: DataTypes.TEXT
     });
 
     return AvatarClasses;

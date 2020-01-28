@@ -399,7 +399,7 @@
             "military": "tan",
             "nobility": "aqua",
             "peasantry": "blue",
-            "royal": "blueviolet"
+            "royal": "purple"
           }
           // Style overlay and gradient
           overlay.css({
