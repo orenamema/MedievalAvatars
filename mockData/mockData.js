@@ -242,17 +242,17 @@ function createMock(){
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
-                {"career": "prince",
-                "socialClass": "royal",
-                "img": "/images/royalClass/prince.png",
-                "careerDescriptions" : "This position is an inherited one, nearly always given to the direct descendants of a King and/or Queen. On average, this is ranked by Birth, the highest position beginning with the first born and gradually decreases with every birth that follows. The further down the ranking goes, the less of a chance that Royal Family member will have of ever becoming King or Queen as such a position is usually passed down sequentially per tradition. As such, they instead aspire to holding alternative positions and/or titles of authority within the government, typically acting as Lords or Ladies who oversee smaller villages and cities within the Kingdom's Territory (if such establishments exist). In these instances, they will often reside within a Keep, Manor or small Fortress/Castle (significantly smaller in size to that of the King & Queen) where they govern and rule under the direction and will of whomever sits on the throne. Though this position comes with limited power, it does allow for some creative freedom in local ruling with regards to different levels of development and can even serve as evidence to their capabilities in a position of higher authority. On rare occasions, the appointment of heir to the throne has actually been changed to a Lord or Lady of this standing after they proved themselves a far more capable ruler than their sibling of higher birth. Noticeably, the life of a Prince or Princess can be a competitive one.",
-                "createdAt": Date(), 
-                "updatedAt": Date()
-                },
                 {"career": "king",
                 "socialClass": "royal",
                 "img": "/images/royalClass/king.png",
                 "careerDescriptions" : "This position, mostly an inherited one through direct bloodlines, often stands as the highest figure of authority holding the final and ultimate say on all actions and decisions within the kingdom. For most, it is a position of great power and aspiration but also great sacrifice as the crown can be quite heavy and the throne quite lonely. As it is a lifetime position, surrendered in the King's death or late retirement, the role can prove to be a dangerous one, paintings a clear and obvious target not only for the kingdom's enemies, rivals and even allies but also to the king's own family in some instances. The king's subjects can also pose a threat should there be suffering, poverty or too far of a gap in the equality of classes within the kingdom's territory (leading to an uprising). It is a job of significant responsibility and often overwhelming control (corrupting even).",
+                "createdAt": Date(), 
+                "updatedAt": Date()
+                },
+                {"career": "prince",
+                "socialClass": "royal",
+                "img": "/images/royalClass/prince.png",
+                "careerDescriptions" : "This position is an inherited one, nearly always given to the direct descendants of a King and/or Queen. On average, this is ranked by Birth, the highest position beginning with the first born and gradually decreases with every birth that follows. The further down the ranking goes, the less of a chance that Royal Family member will have of ever becoming King or Queen as such a position is usually passed down sequentially per tradition. As such, they instead aspire to holding alternative positions and/or titles of authority within the government, typically acting as Lords or Ladies who oversee smaller villages and cities within the Kingdom's Territory (if such establishments exist). In these instances, they will often reside within a Keep, Manor or small Fortress/Castle (significantly smaller in size to that of the King & Queen) where they govern and rule under the direction and will of whomever sits on the throne. Though this position comes with limited power, it does allow for some creative freedom in local ruling with regards to different levels of development and can even serve as evidence to their capabilities in a position of higher authority. On rare occasions, the appointment of heir to the throne has actually been changed to a Lord or Lady of this standing after they proved themselves a far more capable ruler than their sibling of higher birth. Noticeably, the life of a Prince or Princess can be a competitive one.",
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 },
