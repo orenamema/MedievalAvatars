@@ -73,7 +73,7 @@ var handleFormSubmit = function (event) {
 // button is hit
 var handleFormCreate = function (event) {
     event.preventDefault();
-
+    validationCheck();
     // We get rid of all spaces before and after 
     // username and password with trim()
     var login = {
