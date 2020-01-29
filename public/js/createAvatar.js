@@ -1,6 +1,6 @@
+// import { json } from "sequelize/types";
+
 $(function(){
-
-
 
     // ========================= Carousel ==================================================
     var activeImage;
@@ -37,66 +37,32 @@ $(function(){
         });
     }
 
-
-
-
-    // ========================= Create Avatar ==================================================
-    $(".createPageList li").on("click", function(){
-        var btnValue = $(this).attr("data-name");
-        createCarousel(btnValue);
-    })
-
-
-    var Avatar = {
-        create: function(data, cb) {
-            Avatar.create("Avatars", data, function(res){
-                cb(res);
-            });
-        }
+ 
+    function getPersonalityTraits() {
+        var values = "";
+        $(':checkbox:checked').each(function(i){
+            values += `${$(this).val()},`;
+        });
+        return values
     };
-    
-
-    $(".create-form").on("submit", function(event){
-        event.preventDefault();
-
-        var result = $('input[type="checkbox"]:checked');
-        console.log(result[0].value);
-        console.log(result.length);
-        
-        var string = "";
-        for (var i = 0;i < result.length; i++) {
-            var ele = result[i].length;
-            string += ele;
-        }
-        console.log(string);
-    });
-
 
 
     $(".create-form").on("submit", function(event){
         event.preventDefault();
+        var personalityTraits = getPersonalityTraits();
+        var userId = JSON.parse(localStorage.getItem("user"));
 
-        // var result = $('input[type="checkbox"]:checked');
-        // console.log(result[0].value);
-        // console.log(result.values);
-
-        // for (var i = 0; i < result.value.length; i++) {
-
-        // }
-
-        // let newTraits = result.value.join(" ");
-        // console.log(newTraits);
 
         var newAvatar = {
             name: $('#newName').val().trim(),
             age: $('#newAge').val().trim(),
-            // personality: newTraits,
+            personality: personalityTraits,
             backstory: $('#newBackstory').val().trim(),
             details: $('#newDetails').val().trim(),
-            id: 1
+            AvatarClassesId: activeImage
         }
-        var localStorageId = 
-        $.ajax("/api/create/"+ localStorageId, {
+
+        $.ajax("/api/create/"+ userId.id, {
             type: "POST",
             data: newAvatar
         }).then(function(){

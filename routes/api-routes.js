@@ -2,15 +2,17 @@ const db = require("../models");
 
 module.exports = app => {
     app.post("/api/create/:userId", function(req,res){
-        db.Avatars.create(req.body, function(data){
-            res.json(data)
+        db.Avatars.create(req.body).then(function(data){
             db.UsersAvatars.create({
-                UserId: req.params.UserId,
+                UserId: req.params.userId,
                 AvatarId: data.id
+            }).then(function(response) {
+                res.json(response);
             })
-        })
-        req.body
+        });
+
     });
+
     app.get("/api/classes/:name", function(req, res) {
         db.AvatarClasses.findAll(
             {
