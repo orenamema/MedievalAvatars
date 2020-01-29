@@ -148,5 +148,4 @@ $(function(){
     $(document).ready(function(){
         $('.tooltipped').tooltip();
     });
-
 });

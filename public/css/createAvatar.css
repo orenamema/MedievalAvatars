@@ -12,12 +12,11 @@ body {
         text-align: center;
         background-color: rgb(124, 124, 124);
         color: white;
-
         width: 220px;
         padding-top: 42px;
     }
         .brand-logo {
-            text-align: center;   
+            text-align: center;  
         }
         .app-name {
             color: rgb(255, 255, 255);
