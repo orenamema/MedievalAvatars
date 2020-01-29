@@ -1,4 +1,4 @@
-.nav-extended {
+å.nav-extended {
     text-align: center;
     font-weight: bold;
     font-size: 25px;
@@ -32,34 +32,55 @@
     box-shadow: 0 8px 17px 0 purple, 0 6px 20px 0 purple;
 } 
 
+#all-view {
+    color: white;
+    font-size: 25px;
+    padding-bottom: -10PX;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;}
 #royal-view {
     color: white;
-    padding: 17px;
-}
+    padding-bottom: -10PX;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;}
 #authority-view {
     color: white;
-    padding: 17px;
-}
+    padding-bottom: -10PX;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;}
 #nobility-view {
     color: white;
-    padding: 17px;
-}
+    padding-bottom: -10PX;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;}
 #military-view {
     color: white;
-    padding: 17px;
-}
+    padding-bottom: -10PX;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;}
 #clergy-view {
     color: white;
-    padding: 17px;
-}
+    padding-bottom: -10PX;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;}
 #merchant-view {
     color: white;
-    padding: 17px;
-}
+    padding-bottom: -10PX;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;}
 #peasantry-view {
     color: white;
-    padding: 17px;
-}
+    padding-bottom: -10PX;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;}
 
 /* .authority img {
     height: 250px;
