@@ -51,7 +51,7 @@ $(function(){
         event.preventDefault();
         var personalityTraits = getPersonalityTraits();
         var userId = JSON.parse(localStorage.getItem("user"));
-
+        console.log("userid", userId)
 
         var newAvatar = {
             name: $('#newName').val().trim(),
@@ -114,5 +114,4 @@ $(function(){
     $(document).ready(function(){
         $('.tooltipped').tooltip();
     });
-
 });

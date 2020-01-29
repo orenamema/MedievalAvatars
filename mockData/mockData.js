@@ -335,15 +335,35 @@ function createMock(){
                 "createdAt": Date(), 
                 "updatedAt": Date()
                 }
-        ]};
+        ],
 
+        "UsersAvatars":[
+                {"UserId":1,
+                "AvatarId":3
+                },       
+                
+                {"UserId":2,
+                "AvatarId":7
+                } ,
 
+                {"UserId":3,
+                "AvatarId":5
+                },
+
+                {"UserId":4,
+                "AvatarId":2
+                }
+        ]
+};
         db.Users.bulkCreate(mockData.Users).then(function(dbExample) {
                 console.log(`STORED Users!!`);
                 db.AvatarClasses.bulkCreate(mockData.AvatarClasses).then(function(dbExample) {
                         console.log(`STORED AvatarClasses!!`);
                         db.Avatars.bulkCreate(mockData.Avatars).then(function(dbExample) {
                                 console.log(`STORED Avatars!!`);
+                                db.UsersAvatars.bulkCreate(mockData.UsersAvatars,{ individualHooks: true }).then(function(response){
+                                        console.log("new avatar here!",(response))
+                                })
                         });
                 });
         });
