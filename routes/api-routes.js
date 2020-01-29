@@ -40,7 +40,6 @@ module.exports = app => {
 
     // Create a new User
     app.post("/api/createAccount", function(req, res) {
-        console.log(JSON.stringify(req.body));
         db.Users.findOrCreate({
             where: {
                 userName: req.body.userName

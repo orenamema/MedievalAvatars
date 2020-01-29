@@ -1,12 +1,7 @@
 const db = require("../models");
+const Sequelize = require('sequelize');
 
 module.exports = app => {
-    // This should be "/" but is "/1" as too many 
-    // .css and .js files imported in main.handlebars
-    // are breaking formating for loginPage.handlebars
-    // In the interim, index.html is the quick fix 
-    // to access localhost:8080
-    // We will debug loginPage.handlebars on localhost:8080/1
     app.get("/",(req,res) => {
         res.render("loginPage");
     });
@@ -23,6 +18,37 @@ module.exports = app => {
                 ]
             }).then(function(data){
             res.render("viewAvatar", {avatars: data});
+        })
+    });
+
+    app.get("/all/:id",(req,res) => {
+        db.UsersAvatars.findAll(
+            {
+                where: {
+                    UserId: req.params.id
+                }
+            }
+        ).then(function(data){
+                var arrayIds = [];
+                data.forEach(element => {
+                    arrayIds.push(JSON.stringify(element.dataValues.AvatarId));
+                });
+                db.Avatars.findAll(
+                    {   
+                        where: {
+                            id: {[Sequelize.Op.in]: arrayIds}
+                        },
+                        include: [
+                            {
+                                model: db.AvatarClasses, 
+                                as: "AvatarClasses",
+                                required: true
+                            }
+                        ]
+                    }).then(function(datas){
+                    res.render("viewAvatar", {avatars: datas});
+
+                })
         })
     });
 

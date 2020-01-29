@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
         password: DataTypes.STRING
     });
     Users.associate = function(models) {
-        Users.belongsToMany(models.Avatars, {through: 'UsersAvatars'});
+        Users.belongsToMany(models.Avatars, {through: 'UsersAvatars', as: "Users"});
       };
     return Users;
   };

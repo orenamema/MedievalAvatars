@@ -15,7 +15,7 @@ module.exports = function(sequelize, DataTypes) {
 
     
     Avatars.associate = function(models) {
-        Avatars.belongsToMany(models.Users, {through: 'UsersAvatars'});
+        Avatars.belongsToMany(models.Users, {through: 'UsersAvatars', as: "Avatars"});
         Avatars.belongsTo(models.AvatarClasses, {as: "AvatarClasses"});
       };
 
