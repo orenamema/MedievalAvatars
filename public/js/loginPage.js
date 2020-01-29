@@ -1,3 +1,5 @@
+// import { json } from "sequelize/types";
+
 // We get all the necessary ids into variables
 var $userName = $("#userName");
 var $password = $("#password");
@@ -54,8 +56,11 @@ var handleFormSubmit = function (event) {
     // credentials do not exist
     API.login(login).then(function (response) {
         console.log(response);
-        if (response == "success") {
+        if (response.length > 0) {
             $userName.val("");
+            userInfo = {userName: response[0].userName, id: response[0].id};
+            var userInfo = JSON.stringify(userInfo);
+            localStorage.setItem("user", userInfo);
             window.location.href = "/create";
         }
         else {
@@ -73,7 +78,10 @@ var handleFormSubmit = function (event) {
 // button is hit
 var handleFormCreate = function (event) {
     event.preventDefault();
-    validationCheck();
+    var isValid = validationCheck();
+    if(isValid === false){
+        return;
+    }
     // We get rid of all spaces before and after 
     // username and password with trim()
     var login = {
@@ -86,15 +94,20 @@ var handleFormCreate = function (event) {
     // when we are successful or go get an alert if the
     // credentials do not exist
     API.create(login).then(function (response) {
-        console.log(response);
-        if (response === true) {
+        if (response[1] === true) {
             $userName.val("");
+            userInfo = {userName: response[0].userName, id: response[0].id};
+            var userInfo = JSON.stringify(userInfo)
+            localStorage.setItem("user", userInfo);
             window.location.href = "/create";
         }
         else {
             $userName.addClass("invalid")
             userNameInputLabel.html("User name already exist");
-            userNameInputLabel.css("color", "red");        }
+            userNameInputLabel.css("color", "red");
+            $userName.val("");
+            $password.val("");
+        }
     });
 
 };
