@@ -47,13 +47,16 @@ module.exports = app => {
     // Create a new User
     app.post("/api/createAccount", function(req, res) {
         console.log(JSON.stringify(req.body));
-        db.Users.create({
-            userName: req.body.userName,
-            password: req.body.password,
-            createdAt: Date(),
-            updatedAt: Date(),
-        }).then(function() {
-            res.send("success");
+        db.Users.findOrCreate({
+            where: {
+                userName: req.body.userName
+            },
+            defaults: {
+                userName: req.body.userName,
+                password: req.body.password
+            }
+        }).then(function(data) {            
+            res.send(data[1]);
         });
     });    
 

@@ -42,18 +42,18 @@
 					<form class="col s12">
 						<div class="row">
 							<div class="input-field col s12">
-								<input id="input_text" type="text" data-length="10">
-								<label for="input_text">Username</label>
+								<input id="userName" type="text" data-length="10" required="required">
+								<label id="userNameInputLabel" for="input_text">Username</label>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-field col s12">
-								<input id="passwordInput" class="text" data-length="10">
-								<label for="passwordInput">Password</label>
+								<input id="password" class="text" data-length="10" required="required" type="password" placeholder="password">
+								{{!-- <label for="passwordInput">Password</label> --}}
 							</div>
 						</div>
-						<a class="waves-effect waves-light btn blue lighten-3 black-text">Login</a>
-						<a class="waves-effect waves-light btn blue darken-3 pl-2">Sign Up</a>
+						<a class="waves-effect waves-light btn blue lighten-3 black-text" id="login" type="submit">Login</a>
+						<a class="waves-effect waves-light btn blue darken-3 pl-2" id="create">Sign Up</a>
 
 					</form>
 				</div>
