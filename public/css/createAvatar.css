@@ -112,29 +112,53 @@ body {
 
     #royal-tab {
         color: white;
-        padding: 17px;
+        padding-bottom: -10PX;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     #authority-tab {
         color: white;
-        padding: 17px;
+        padding-bottom: -10PX;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     #nobility-tab {
         color: white;
-        padding: 17px;
+        padding-bottom: -10PX;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     #military-tab {
         color: white;
-        padding: 17px;
+        padding-bottom: -10PX;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     #clergy-tab {
         color: white;
-        padding: 17px;
+        padding-bottom: -10PX;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     #merchant-tab {
         color: white;
-        padding: 17px;
+        padding-bottom: -10PX;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     #peasantry-tab {
         color: white;
-        padding: 17px;
+        padding-bottom: -10PX;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .tooltip {
+        width: 50%;
     }
