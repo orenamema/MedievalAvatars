@@ -16,7 +16,6 @@ $(function(){
     })
 
     function createCarousel(btnValue = "royal") {
-        console.log("Sasa");
         $('.carousel').html('');
         $("#carouselDiv").removeClass("initialized");
 

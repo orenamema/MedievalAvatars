@@ -1,4 +1,4 @@
-<div class="limiter">
+{{!-- <div class="limiter">
 	<div class="container-login100" style="background-image: url('images/castle3.gif');">
 		<div class="wrap-login100 p-t-30 p-b-50">
 			<span class="login100-form-title p-b-41">
@@ -31,4 +31,34 @@
 <div id="dropDownSelect1"></div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/main.js"></script> 
+<script src="/js/main.js"></script>  --}}
+
+<div>
+	<div id="loginPageWrapper">
+		<div class="row">
+			<div class="col s3 offset-s1">
+				<div class="row" id="loginForm">
+					<h4 class="center-align">Avatar Login</h4>
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="userName" type="text" data-length="10" required="required">
+								<label id="userNameInputLabel" for="input_text">Username</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="password" class="text" data-length="10" required="required" type="password" placeholder="password">
+								{{!-- <label for="passwordInput">Password</label> --}}
+							</div>
+						</div>
+						<a class="waves-effect waves-light btn blue lighten-3 black-text" id="login" type="submit">Login</a>
+						<a class="waves-effect waves-light btn blue darken-3 pl-2" id="create">Sign Up</a>
+
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
