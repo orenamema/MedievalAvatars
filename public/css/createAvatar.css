@@ -84,7 +84,7 @@ body {
         #submit-button {
             height: 42px;
             margin: 10px;
-            float: right;
+            /* float: right; */
             font-size: 25px;
             font-weight: bold;
         }
@@ -165,4 +165,40 @@ body {
         font-weight: bold;
         font-family: Enchanted Land;
         font-size: 24px;
+    }
+
+    #modal1 {
+        background-color: #9c27b0;
+        color: white;
+        border-radius: 10px;
+    }
+    #modal2 {
+        background-color: #2196f3;
+        color: white;
+        border-radius: 10px;
+    }
+    #modal3 {
+        background-color: #f44336;
+        color: white;
+        border-radius: 10px;
+    }
+    #modal4 {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+    }
+    #modal5 {
+        background-color: #ffeb3b;
+        color: black;
+        border-radius: 10px;
+    }
+    #modal6 {
+        background-color: #795548;
+        color: white;
+        border-radius: 10px;
+    }
+    #modal7 {
+        background-color: #4caf50;
+        color: white;
+        border-radius: 10px;
     }
