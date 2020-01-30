@@ -1,9 +1,11 @@
 # MedievalAvatars
 
-This application is a Medieval NPC (Non-Playable Character) generator for tabletop and board games. It allows the user to create and store a large number of characters occupying different aspects of a medieval society, divided up by social classes and their individual careers. It is a helpful tool for world building with a medieval themed setting and useful in creating multiple characters and storing them for later use.
+This application is a Medieval NPC (Non-Playable Character) generator for tabletop and board games. It allows the user to create and store a large number of characters occupying different aspects of a medieval society, divided up by social classes and their individual careers. It is a helpful tool for world building with a medieval themed setting and useful in creating multiple characters and storing them for later use. The motivation behind this application is the fact that similar applications are poorly made and there is a growing market for the tabletop culture. We also thought it was an application that will highlight our creativity and originality.
 
 
 # Installation
+
+To install this application you need to follow these steps:
 
 * Step 1: Visit Github repository at [Github](https://github.com/orenamema/MedievalAvatars)
 * Step 2: Clone repository (selecting clone button and copy link)
@@ -21,7 +23,7 @@ This application is a Medieval NPC (Non-Playable Character) generator for tablet
 
 # Instant Use
 
-To use the app without installing it, simply visit the live heroku site: [heroku](https://radiant-plateau-35150.herokuapp.com/)
+Alternatively to have instant access to the application without installing it, simply visit the [Medieval Avatars](https://radiant-plateau-35150.herokuapp.com/) site. We have used [Heroku](https://www.heroku.com) to host our site.
 
 
 # Instructions of use
