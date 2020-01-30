@@ -7,7 +7,7 @@ $(function(){
 
     $('.collapsible').collapsible();
     $('.carousel').carousel();
-    
+
     createCarousel();
 
     $(".createPageList li").on("click", function(){

@@ -2,6 +2,17 @@ $(function () {
     var getUserId = JSON.parse(localStorage.getItem("user"));
     $(".viewOwnAvatars").attr("href", `/all/${getUserId.id}`);
      
+    $(".saveBtn").on("click", function(e) {
+        e.preventDefault();
+        var imgId = $(this).data("id");;
+        var userId = JSON.parse(localStorage.getItem("user"));
+
+        $.post("/api/save/" + imgId, {user: userId.id}, function(data){
+            console.log(data, "saved");
+        })
+    });
+    console.log(window.location.href);
+
     $("#royal-view").mouseover(function () {
         $(this).css('color', '#ff00ff');
     }).mouseout(function () {

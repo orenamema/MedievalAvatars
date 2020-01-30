@@ -52,7 +52,16 @@ module.exports = app => {
 
             res.json(data);
         });
-    });    
+    });
+
+    app.post("/api/save/:id", function(req, res) {
+        db.UsersAvatars.create({
+            UserId: req.body.user,
+            AvatarId: req.params.id
+        }).then(function(data){
+            res.json(data);
+        });
+    });
 
 }
 

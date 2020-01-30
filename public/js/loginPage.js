@@ -54,7 +54,6 @@ $(document).ready(function () {
         // when we are successful or go get an alert if the
         // credentials do not exist
         API.login(login).then(function (response) {
-            console.log(response);
             if (response.length > 0) {
                 $userName.val("");
                 userInfo = { userName: response[0].userName, id: response[0].id };
