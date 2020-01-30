@@ -26,7 +26,9 @@ To install this application you need to follow these steps:
 Alternatively to have instant access to the application without installing it, simply visit the [Medieval Avatars](https://radiant-plateau-35150.herokuapp.com/) site. We have used [Heroku](https://www.heroku.com) to host our site.
 
 
-# Instructions of use
+# Application
+
+![alt text](https://github.com/orenamema/MedievalAvatars/raw/master/public/images/avatar.gif)
 
 As a New User, first begin by creating a username and password. Both are needed to create and save any characters. Once made, login and make your way to the Create page (if not already there upon login). Here you will see a black bar along the top of the screen displaying various Social Classes of the middle ages such as Royal, Peasantry, etc. To read about each social class, there is a black round button on the bottom right of the screen. Simply hovering over it and selecting the matching Social Class will display some general info about each (some more detailed than others).
 
@@ -67,14 +69,14 @@ Within the description of each created Avatar, you'll notice it includes not jus
 * [Javascript](https://www.w3schools.com/js)
 * [FontAwesome](https://fontawesome.com/)
 
-
-## Application
-
-
 ## Code
 
 
 ## Learning Points
+
+* Materialize
+* Carousel
+* Medieval History
 
 
 ## Authors
@@ -94,6 +96,6 @@ Within the description of each created Avatar, you'll notice it includes not jus
 **Ken Bains**
 
 * [Github](https://github.com/ken_bains)
-* [LinkedIn]
+* [LinkedIn] 
 * [Portfolio]
 
