@@ -3,6 +3,7 @@
   <!-- Fixed Masonry Filters -->
   <div class="categories-wrapper black">
     <div class="categories-container">
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large menuIcon"><i class="fas fa-bars"></i></a>
       <ul class="categories container">
         <li class="active"><a class="waves-effect waves-light" id="all-view" href="#all">All <i class="fas fa-chess"></i></a></li>
         <li><a class="waves-effect waves-purple accent-3" id="royal-view" href="#royal">Royal <i class="fas fa-chess-king"></i></a></li>
@@ -19,7 +20,7 @@
 
 {{!-- ========================= Slidenav ================================================== --}}
 
-<ul id="slide-out" class="side-nav fixed">
+<ul id="slide-out" class="side-nav">
     <a href="/all" class="brand-logo"><i class="fab fa-fort-awesome-alt" style="font-size: 155px"></i></a>
     <h3 class="app-name" style="text-align: center;">Medieval Avatars</h3>
     
@@ -27,10 +28,9 @@
     <li><a href="/all" class="w3-bar-item w3-button" id="nav-view-all-btn" style="text-align: center;">View All</a></li>
     <li><a href="/all/" class="w3-bar-item w3-button viewOwnAvatars" id="nav-view-btn" style="text-align: center;">View Own</a></li>
 </ul>
-{{log ownAvatars}}
 
 <div id="portfolio" class="section gray">
-  <div class="container">
+  <div class="container viewAllContainer">
     <div class="gallery row" id="galleryDiv">
   {{#each avatars}}
       <div class="col l4 m6 s12 gallery-item gallery-expand gallery-filter {{AvatarClasses.socialClass}}" data-class="{{AvatarClasses.socialClass}}">

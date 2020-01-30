@@ -1,7 +1,11 @@
+
+
 $(function () {
+    $(".button-collapse").sideNav();
+
     var getUserId = JSON.parse(localStorage.getItem("user"));
     $(".viewOwnAvatars").attr("href", `/all/${getUserId.id}`);
-     
+
     $(".saveBtn").on("click", function(e) {
         e.preventDefault();
         var imgId = $(this).data("id");;
