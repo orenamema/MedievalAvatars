@@ -8,10 +8,18 @@ $(function () {
         var userId = JSON.parse(localStorage.getItem("user"));
 
         $.post("/api/save/" + imgId, {user: userId.id}, function(data){
-            console.log(data, "saved");
+                        
         })
     });
-    console.log(window.location.href);
+    $(".deleteBtn").on("click", function(e) {
+        e.preventDefault();
+        var imgId = $(this).data("id");;
+        var userId = JSON.parse(localStorage.getItem("user"));
+
+        $.post("/api/delete/" + imgId, {user: userId.id}, function(data){
+            location.reload();
+        })
+    });
 
     $("#royal-view").mouseover(function () {
         $(this).css('color', '#ff00ff');

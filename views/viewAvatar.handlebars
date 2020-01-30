@@ -27,7 +27,7 @@
     <li><a href="/all" class="w3-bar-item w3-button" id="nav-view-all-btn" style="text-align: center;">View All</a></li>
     <li><a href="/all/" class="w3-bar-item w3-button viewOwnAvatars" id="nav-view-btn" style="text-align: center;">View Own</a></li>
 </ul>
-
+{{log ownAvatars}}
 
 <div id="portfolio" class="section gray">
   <div class="container">
@@ -57,7 +57,12 @@
             </p>
           </div>
           <div class="gallery-action">
+            {{#if ownAvatars}}
+            <a class="btn-floating btn-large waves-effect waves-light grey deleteBtn" data-id="{{id}}"><i class="material-icons">delete_forever</i></a>
+            {{else}}
             <a class="btn-floating btn-large waves-effect waves-light grey saveBtn" data-id="{{id}}"><i class="material-icons">favorite</i></a>
+            {{/if}}
+
           </div>
         </div>
       </div>

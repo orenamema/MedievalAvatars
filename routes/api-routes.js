@@ -63,5 +63,16 @@ module.exports = app => {
         });
     });
 
+    app.post("/api/delete/:id", function(req, res) {
+        db.UsersAvatars.destroy({
+            where:{
+                UserId: req.body.user,
+                AvatarId: req.params.id
+            }
+        }).then(function(data){
+            res.json(data);
+        });
+    });
+
 }
 
