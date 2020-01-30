@@ -17,7 +17,7 @@ module.exports = app => {
                     }
                 ]
             }).then(function (data) {
-                res.render("viewAvatar", { avatars: data });
+                res.render("viewAvatar", { avatars: data, viewPage: "All Avatars" });
             })
     });
 
@@ -49,7 +49,7 @@ module.exports = app => {
                     datas.forEach(element => {
                         element["ownAvatars"] = true
                     });
-                    res.render("viewAvatar", { avatars: datas });
+                    res.render("viewAvatar", { avatars: datas, viewPage: "My Avatars" });
                 })
         })
     });
