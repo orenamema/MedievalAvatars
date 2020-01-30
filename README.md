@@ -96,6 +96,6 @@ Within the description of each created Avatar, you'll notice it includes not jus
 **Ken Bains**
 
 * [Github](https://github.com/ken_bains)
-* [LinkedIn] 
-* [Portfolio]
+* [LinkedIn](https://www.linkedin.com/in/ken-bains)
+* [Portfolio](https://github.com/ken-Bains)
 
