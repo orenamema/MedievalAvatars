@@ -67,7 +67,9 @@ $(function(){
             data: newAvatar
         }).then(function(){
             console.log("Created new Avatar");
-            location.reload();
+            var userId = JSON.parse(localStorage.getItem("user"));
+            window.location.href = "/all/" + userId.id;
+
         });
     });
 

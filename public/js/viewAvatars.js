@@ -8,7 +8,7 @@ $(function () {
         var userId = JSON.parse(localStorage.getItem("user"));
 
         $.post("/api/save/" + imgId, {user: userId.id}, function(data){
-                        
+            location.reload();
         })
     });
     $(".deleteBtn").on("click", function(e) {
