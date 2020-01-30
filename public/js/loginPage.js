@@ -5,6 +5,7 @@ $(document).ready(function () {
     var $submitBtn = $("#login");
     var $createBtn = $("#create");
     var userNameInputLabel = $("#userNameInputLabel")
+    var inputPasswordLabel = $("#inputPasswordLabel")
 
     // We create an API Object that will communicate
     // with the server to send the username and password
@@ -111,16 +112,36 @@ $(document).ready(function () {
     };
 
     function validationCheck() {
+        userNameInputLabel.html("User Name");
+        userNameInputLabel.css("color", "gray");
+        inputPasswordLabel.html("Password");
+        inputPasswordLabel.css("color", "gray");
+        
         var userInput = $userName.val().trim().toLowerCase();
         var passwordInput = $password.val().trim();
         if (userInput === "") {
             $userName.addClass("invalid")
+            userNameInputLabel.html("User name cannot be empty");
+            userNameInputLabel.css("color", "red");
             return false
         }
         else if (passwordInput === "") {
             $password.addClass("invalid")
+            inputPasswordLabel.html("Password cannot be empty");
+            inputPasswordLabel.css("color", "red");
+            return false
+        } else if (userInput.length > 10) {
+            $userName.addClass("invalid");
+            userNameInputLabel.html("User name is too long");
+            userNameInputLabel.css("color", "red");
+            return false
+        } else if (passwordInput.length > 10) {
+            $$password.addClass("invalid");
+            inputPasswordLabel.html("Password is too long");
+            inputPasswordLabel.css("color", "red");
             return false
         } else {
+
             return true
         }
     };
