@@ -71,6 +71,47 @@ Within the description of each created Avatar, you'll notice it includes not jus
 
 ## Code
 
+````
+const db = require("../models");
+
+module.exports = app => {
+    app.post("/api/create/:userId", function(req,res){
+        db.Avatars.create(req.body).then(function(data){
+            db.UsersAvatars.create({
+                UserId: req.params.userId,
+                AvatarId: data.id
+            }).then(function(response) {
+                res.json(response);
+            })
+        });
+
+    });
+
+    app.get("/api/classes/:name", function(req, res) {
+        db.AvatarClasses.findAll(
+            {
+                where:{
+                    socialClass: req.params.name
+                }
+        }).then(function(data){
+            res.json(data);
+        })
+    });
+
+    // login route
+    app.post("/api/login/", function(req,res){
+        db.Users.findAll({
+            where: {
+                userName: req.body.userName,
+                password: req.body.password
+            }
+        }).then(function(login) {
+            res.json(login);
+        });
+    });
+````
+Above is the code shows the different routes that we've used to create avatars and see all avatars. When it comes to the login route, we query the database to find the username and password we received in the request.
+
 
 ## Learning Points
 
