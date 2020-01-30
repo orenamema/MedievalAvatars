@@ -14,6 +14,33 @@ $(function(){
         var btnValue = $(this).attr("data-name");
         createCarousel(btnValue);
     })
+    $("form input").keyup(function(){
+        var currentInput = $(this).val().trim();
+        var currentInputName = $(this).attr("name")
+        var badgeNAme = `${currentInputName}Badge`;
+
+        if(currentInput !== "") {
+            $(`#${badgeNAme}`).removeClass("hide");
+        } else {
+            $(`#${badgeNAme}`).addClass("hide");
+        }
+        if(currentInputName === "age" && $.isNumeric(currentInput) !== true) {
+            $(this).val("");
+            $(this).addClass("invalid");
+            $(this).attr("placeholder", "Age must be a number");
+        } else {
+            $(this).removeClass("invalid")
+        }
+    });
+
+    $('input[type=checkbox]').change(function(){
+            if ( $('input[type=checkbox]:checked').length > 0) {
+                $("#personalityBadge").removeClass("hide");
+                
+            } else {
+                $("#personalityBadge").addClass("hide");
+            }
+    });
 
     function createCarousel(btnValue = "royal") {
         $('.carousel').html('');

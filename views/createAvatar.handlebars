@@ -45,15 +45,15 @@
             <form class="create-form">
                 <ul class="collapsible popout">
                     <li>
-                        <div class="collapsible-header"><i class="fas fa-user-edit"></i>Name</div>
+                        <div class="collapsible-header"><i class="fas fa-user-edit"></i>Name<span id="nameBadge" class="badge hide"><i class="material-icons">check_circle_outline</i></span></div>
                         <div class="collapsible-body"><span><input type="text" id="newName"name="name"></span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header"><i class="fas fa-user-plus"></i>Age</div>
+                        <div class="collapsible-header"><i class="fas fa-user-plus"></i>Age<span id="ageBadge" class="badge hide"><i class="material-icons">check_circle_outline</i></span></div>
                         <div class="collapsible-body"><span><input type="text" id="newAge" name="age"></span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header"><i class="fas fa-user-check"></i>Personality</div>
+                        <div class="collapsible-header"><i class="fas fa-user-check"></i>Personality<span id="personalityBadge" class="badge hide"><i class="material-icons">check_circle_outline</i></span></div>
                         <div id="p-container" class="collapsible-body"><span>
 
 
@@ -230,11 +230,11 @@
                         </span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header"><i class="fas fa-user-edit"></i>Backstory</div>
+                        <div class="collapsible-header"><i class="fas fa-user-edit"></i>Backstory<span id="backstoryBadge" class="badge hide"><i class="material-icons">check_circle_outline</i></span></div>
                         <div class="collapsible-body"><span><input type="text" id="newBackstory" name="backstory"></span></div>
                     </li>
                     <li>
-                        <div class="collapsible-header"><i class="fas fa-user-edit"></i>Details (Optional)</p></div>
+                        <div class="collapsible-header"><i class="fas fa-user-edit"></i>Details (Optional)<span id="charDetailsBadge" class="badge hide"><i class="material-icons">check_circle_outline</i></span></p></div>
                         <div class="collapsible-body"><span><input type="text" id="newDetails" name="charDetails"></span></div>
                     </li>
                     <button type="submit" id="submit-button" class="btn black white-text waves-effect waves-light submit">Create</button>
