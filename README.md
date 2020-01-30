@@ -5,18 +5,18 @@ This application is a Medieval NPC (Non-Playable Character) generator for tablet
 
 # Installation
 
-Step 1: Visit Github repository at [Github](https://github.com/orenamema/MedievalAvatars)
-Step 2: Clone repository (selecting clone button and copy link)
-Step 3: Open Terminal (or Git Bash for Windows users) in the location you wish to copy the app files to
+* Step 1: Visit Github repository at [Github](https://github.com/orenamema/MedievalAvatars)
+* Step 2: Clone repository (selecting clone button and copy link)
+* Step 3: Open Terminal (or Git Bash for Windows users) in the location you wish to copy the app files to
 (I personally use Desktop)
-Step 4: Type git clone (adding copied link here without parentheses)
-Step 5: Once created, direct the terminal within the file (or reopen it within) and perform an npm install
+* Step 4: Type git clone (adding copied link here without parentheses)
+* Step 5: Once created, direct the terminal within the file (or reopen it within) and perform an npm install
 (this will grab the needed node_module files)
-Step 6: Next locate the schema.sql file from within the models folder
-Step 7: Open the file and copy its contents
-Step 8: Open MySQL Workbench or similar database program
-Step 9: Paste the sql copied content within and run it to establish your databse.
-Step 10: Run a local server (typing node server.js) and Enjoy!
+* Step 6: Next locate the schema.sql file from within the models folder
+* Step 7: Open the file and copy its contents
+* Step 8: Open MySQL Workbench or similar database program
+* Step 9: Paste the sql copied content within and run it to establish your databse.
+* Step 10: Run a local server (typing node server.js) and Enjoy!
 
 
 # Instant Use
@@ -32,15 +32,15 @@ As a New User, first begin by creating a username and password. Both are needed 
 ![image](./public/images/readme/social-class-description.png)
 
 When selecting different Social Classes, you'll notice that a carousel of images will also change, displaying different character types, each representing a different Career of that particular Social Class. For example: within the Royal class you'll find a King and Queen. Within the Peasantry Class you'll find Farmers and Hunters. The center image represents the current selected Career. To create this into a Character (aka Avatar), follow these simple steps:
-    1) create a name
-    2) include an age
-    3) select any personality traits
+* 1) create a name
+* 2) include an age
+* 3) select any personality traits
     - no limit to the number you may choose
     - positive traits check as green
     - negative traits check as red
-    4) write the character's backstory
+* 4) write the character's backstory
     - this can be any length
-    5) (optional) write additonal Details about the character.
+* 5) (optional) write additonal Details about the character.
 
     Once complete, simply press select and you'll be taken to the View Own page. To navigate the app, select the three line symobol in the top left corner of the screen (resembling a flattened cheese burger). This will open the Sidenav bar which is present on every page. To close this bar, simply click anywhere on the browser.
 
